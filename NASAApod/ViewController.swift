@@ -16,9 +16,11 @@ class ViewController: UIViewController {
         descriptionLabel.text = ""
         copyrightLabel.text = ""
     
+        // Initiate interface update.
         updateInterface()
     }
     
+    /// Updates the interface using data retrieved from the NASA server
     func updateInterface() {
         let pcinfo = PhotoInfoController()
         pcinfo.fetchPhotoInfo { (info) in
@@ -38,7 +40,7 @@ class ViewController: UIViewController {
                     self.copyrightLabel.isHidden = true
                 }
                 
-                // Load image data using url returned by the server
+                // Load photo of the day image using the url returned by the server
                 pcinfo.fetchImage(url: photoInfo.url) {
                     (image)-> Void in
                     /* Run the code on the main thread so the application continues to

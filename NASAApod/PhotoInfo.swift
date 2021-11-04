@@ -22,8 +22,8 @@ struct PhotoInfo : Codable {
     }
     
     
-    /// Initialize a PhotoInfo object's properties using data the is decoded by a decoder. In this case, a JSON decoder.
-    /// - Parameter decoder: decoder object used to decode date
+    /// Initialize a PhotoInfo object's properties using data that is decoded by a decoder. In this case, a JSON decoder.
+    /// - Parameter decoder: decoder object used to decode data
     init(from decoder: Decoder) throws {
         /* We assign our enumeration as the decoder's container.
            We use decode to extract one element from the
