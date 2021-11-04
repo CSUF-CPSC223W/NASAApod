@@ -16,6 +16,9 @@
 		EC4E52D7273339B900A9EA76 /* NASAApodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E52D6273339B900A9EA76 /* NASAApodTests.swift */; };
 		EC4E52E1273339B900A9EA76 /* NASAApodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E52E0273339B900A9EA76 /* NASAApodUITests.swift */; };
 		EC4E52E3273339B900A9EA76 /* NASAApodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E52E2273339B900A9EA76 /* NASAApodUITestsLaunchTests.swift */; };
+		EC4E52F127333A0C00A9EA76 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E52F027333A0C00A9EA76 /* PhotoInfo.swift */; };
+		EC4E52F327333A2800A9EA76 /* URL+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E52F227333A2800A9EA76 /* URL+Helpers.swift */; };
+		EC4E52F527333A3B00A9EA76 /* PhotoInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E52F427333A3B00A9EA76 /* PhotoInfoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		EC4E52DC273339B900A9EA76 /* NASAApodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAApodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4E52E0273339B900A9EA76 /* NASAApodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAApodUITests.swift; sourceTree = "<group>"; };
 		EC4E52E2273339B900A9EA76 /* NASAApodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAApodUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC4E52F027333A0C00A9EA76 /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		EC4E52F227333A2800A9EA76 /* URL+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Helpers.swift"; sourceTree = "<group>"; };
+		EC4E52F427333A3B00A9EA76 /* PhotoInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				EC4E52BF273339B600A9EA76 /* AppDelegate.swift */,
+				EC4E52F027333A0C00A9EA76 /* PhotoInfo.swift */,
 				EC4E52C1273339B600A9EA76 /* SceneDelegate.swift */,
 				EC4E52C3273339B600A9EA76 /* ViewController.swift */,
 				EC4E52C5273339B600A9EA76 /* Main.storyboard */,
 				EC4E52C8273339B800A9EA76 /* Assets.xcassets */,
 				EC4E52CA273339B800A9EA76 /* LaunchScreen.storyboard */,
 				EC4E52CD273339B800A9EA76 /* Info.plist */,
+				EC4E52F227333A2800A9EA76 /* URL+Helpers.swift */,
+				EC4E52F427333A3B00A9EA76 /* PhotoInfoController.swift */,
 			);
 			path = NASAApod;
 			sourceTree = "<group>";
@@ -258,6 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4E52F527333A3B00A9EA76 /* PhotoInfoController.swift in Sources */,
+				EC4E52F127333A0C00A9EA76 /* PhotoInfo.swift in Sources */,
+				EC4E52F327333A2800A9EA76 /* URL+Helpers.swift in Sources */,
 				EC4E52C4273339B600A9EA76 /* ViewController.swift in Sources */,
 				EC4E52C0273339B600A9EA76 /* AppDelegate.swift in Sources */,
 				EC4E52C2273339B600A9EA76 /* SceneDelegate.swift in Sources */,

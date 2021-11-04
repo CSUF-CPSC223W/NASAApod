@@ -1,0 +1,33 @@
+import Foundation
+
+// Provide additional methods for formatting the URL
+extension URL {
+    
+    /// Add queries to the URL
+    /// - Parameter queries: map of queries
+    /// - Returns: URL with the added queries or nil if the produced URL is valid
+    func withQueries(_ queries: [String: String]) -> URL? {
+        // Extract the components of the URL
+        var components = URLComponents(url: self, resolvingAgainstBaseURL: true)
+        /* Create an array from the queries parameter that contains
+           URLQueryItem objects. The object's name and value are
+           taken from one element of the queries dictionary. The
+           .0 property indicates the key and .1 indicates the value
+           of the dictionary. */
+        components?.queryItems = queries.map {
+            URLQueryItem(name: $0.0, value: $0.1)
+        }
+        return components?.url
+    }
+    
+    
+    /// Switches the URL scheme to HTTPS
+    /// - Returns: URL with the HTTPS scheme
+    func withHTTPS() -> URL? {
+        // Extract the components of the URL
+        var components = URLComponents(url: self,
+                                       resolvingAgainstBaseURL: true)
+        components?.scheme = "https"
+        return components?.url
+    }
+}
