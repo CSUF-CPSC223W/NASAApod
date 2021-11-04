@@ -21,7 +21,10 @@ extension URL {
     }
     
     
-    /// Switches the URL scheme to HTTPS
+    /// Changes a URL's scheme to HTTPS
+    ///
+    /// HTTPS stands for Hypertext Transfer Protocol Secure, which is the preferred protocol
+    /// to ensure security.
     /// - Returns: URL with the HTTPS scheme
     func withHTTPS() -> URL? {
         // Extract the components of the URL

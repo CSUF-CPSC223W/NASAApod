@@ -15,7 +15,11 @@ class ViewController: UIViewController {
         titleLabel.text = ""
         descriptionLabel.text = ""
         copyrightLabel.text = ""
-        
+    
+        updateInterface()
+    }
+    
+    func updateInterface() {
         let pcinfo = PhotoInfoController()
         pcinfo.fetchPhotoInfo { (info) in
             /* Run code block on the main thread so the application continues to
