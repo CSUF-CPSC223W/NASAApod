@@ -9,12 +9,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var copyrightLabel: UILabel!
     @IBOutlet weak var nasaImage: UIImageView!
     
+    @IBOutlet weak var dateField: UITextField!
+    
+    @IBAction func updateButtonClicked(_ sender: Any) {
+        updateInterface()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleLabel.text = ""
         descriptionLabel.text = ""
         copyrightLabel.text = ""
+        dateField.text = "2021-11-04"
     
         // Initiate interface update.
         updateInterface()
@@ -23,7 +30,7 @@ class ViewController: UIViewController {
     /// Updates the interface using data retrieved from the NASA server
     func updateInterface() {
         let pcinfo = PhotoInfoController()
-        pcinfo.fetchPhotoInfo { (info) in
+        pcinfo.fetchPhotoInfo(on: dateField.text!) { (info) in
             /* Run code block on the main thread so the application continues to
                run (asynchronously) while waiting for the block to complete.
              */
